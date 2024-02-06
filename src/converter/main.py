@@ -1,6 +1,5 @@
-"""Sample Use of the Converter Class"""
-from converter import StockDataProcessor
+"""Sample Use of the CSVConverter"""
+from converter import CSVConverter
 
-x = StockDataProcessor("./data.txt")
-y = x.import_data()
-x.visualize_data(y)
+csv_converter = CSVConverter('books.csv')
+csv_converter.convert_to_json('books.json')

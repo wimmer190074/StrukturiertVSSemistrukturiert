@@ -1,19 +1,23 @@
+"""Testing the CSVConverter class."""
+
 import os
 import json
 import pytest
-import json
 from converter import CSVConverter
 
 @pytest.fixture
 def csv_converter():
+    """Fixture for opening the test books file."""
     return CSVConverter('tests/data/test_books.csv')
 
 @pytest.fixture
 def expected_output():
+    """Fixture for opening the expected output file."""
     with open('tests/data/expected_output.json', 'r') as f:
         return json.load(f)
 
 def test_basic_conversion_001(csv_converter, expected_output):
+    """Testing basic Conversion."""
     output_file = 'tests/data/test_output.json'
     csv_converter.convert_to_json(output_file)
     
@@ -35,6 +39,7 @@ def test_basic_conversion_001(csv_converter, expected_output):
     os.remove(output_file)
 
 def test_different_column_order_002(csv_converter, expected_output):
+    """Testing Different Column Order."""
     output_file = 'tests/data/test_output.json'
     csv_converter.convert_to_json(output_file)
     
