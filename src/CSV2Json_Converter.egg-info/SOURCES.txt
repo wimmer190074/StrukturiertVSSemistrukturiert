@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/CSV2Json_Converter.egg-info/PKG-INFO
+src/CSV2Json_Converter.egg-info/SOURCES.txt
+src/CSV2Json_Converter.egg-info/dependency_links.txt
+src/CSV2Json_Converter.egg-info/not-zip-safe
+src/CSV2Json_Converter.egg-info/requires.txt
+src/CSV2Json_Converter.egg-info/top_level.txt

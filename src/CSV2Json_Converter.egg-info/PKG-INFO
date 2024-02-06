@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: CSV2Json-Converter
+Version: 1.0.0
+Summary: "This is a tool to convert a csv book file to json"
+Author: Jan Wimmer
+Provides-Extra: dev
